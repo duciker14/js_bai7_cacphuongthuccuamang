@@ -44,6 +44,7 @@
             var test = true;
             for (let j = 0; j < arr.length; j++) {
                 test = true;
+                if (arr[j] == 1) test = false;
                 for (let t = 2; t <= Math.sqrt(arr[j]); t++) {
                     if (arr[j] % t == 0) {
                         test = false;
